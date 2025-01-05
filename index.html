@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumanth B J | Professional Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            background-color: #f4f4f9;
+        }
+        
+        header {
+            background: linear-gradient(to right, #0066ff, #33ccff);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0066ff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #33ccff;
+            color: black;
+        }
+        
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .section h2 {
+            color: #0066ff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .skills,
+        .projects,
+        .experience {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            min-width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #0066ff;
+            color: white;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        
+        footer a {
+            color: #33ccff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact form {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 1fr;
+            max-width: 500px;
+            margin: auto;
+        }
+        
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .contact button {
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .contact button:hover {
+            background-color: #33ccff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sumanth B J</h1>
+        <p>Innovating through technology and strategic solutions</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+            A dynamic professional committed to leveraging expertise in technology and innovation to craft impactful solutions. Eager to collaborate and solve real-world challenges.
+        </p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Python, JavaScript, C++, SQL</p>
+            </div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, React, Node.js</p>
+            </div>
+            <div class="card">
+                <h3>Data Analysis</h3>
+                <p>Excel, Tableau, Power BI</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>E-Commerce Platform</h3>
+                <p>Developed a scalable platform with integrated payment and user management systems.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Home Automation</h3>
+                <p>Engineered IoT-based solutions for home energy management and security.</p>
+            </div>
+            <div class="card">
+                <h3>Data Visualization Dashboard</h3>
+                <p>Designed dashboards with actionable insights for business intelligence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="card">
+                <h3>Software Engineer Intern</h3>
+                <p>XYZ Tech: Contributed to backend development and system optimization.</p>
+            </div>
+            <div class="card">
+                <h3>Web Developer Intern</h3>
+                <p>ABC Digital: Developed responsive websites and managed hosting environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="contact">
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sumanth B J | <a href="https://linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a></p>
+    </footer>
+</body>
+
+</html>
